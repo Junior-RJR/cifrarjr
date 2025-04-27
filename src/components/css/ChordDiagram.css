@@ -1,0 +1,76 @@
+.chord-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chord-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .fretboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .fret {
+    position: relative;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fret:nth-child(6n) {
+    border-right: none;
+  }
+  
+  .fret:nth-child(n + 31) {
+    border-bottom: none;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  .open-circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+    border-radius: 50%;
+  }
+  
+  .muted-x {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .fret-markers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .fret-markers span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  

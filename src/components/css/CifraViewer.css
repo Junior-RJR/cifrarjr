@@ -1,0 +1,238 @@
+.cifra-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: calc(100vh - 60px);
+}
+
+.song-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.song-info h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.song-info h2 {
+  font-size: 18px;
+  color: #ff8c00;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.cifra-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  gap: 5px;
+}
+
+.cifra-type {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.song-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.favorite-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
+.views {
+  font-size: 14px;
+  color: #888;
+}
+
+.cifra-content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.cifra-content {
+  flex: 1;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cifra-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.auto-scroll {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auto-scroll button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
+.auto-scroll button.active {
+  background-color: #f0f0f0;
+}
+
+.scroll-speed {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.scroll-speed button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tom-info {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.tom {
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.cifra-text {
+  font-family: monospace;
+  line-height: 1.8;
+  white-space: pre;
+  color: #333;
+}
+
+.chord {
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.player-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #eee;
+  z-index: 50;
+}
+
+.play-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #006f51;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-button.playing {
+  background-color: #ff8c00;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.speed-slider {
+  flex: 1;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.speed-value {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #006f51;
+  border-radius: 3px;
+}
+
+.speed-control button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .song-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .song-actions {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .cifra-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
